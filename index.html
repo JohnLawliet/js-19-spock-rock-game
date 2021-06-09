@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
+    <title>Spock Rock Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Rock Paper Scissor Lizard Spock</h1>
+        </div>
+        <!-- Player container -->
+        <div class="player-container" id="player">
+            <h2>You - <span id="playerScore">0</span>
+                <span id="playerChoice" class="choice">--- Choose</span>
+            </h2>
+            <i title="rock" id="playerRock" class="far fa-hand-rock" onclick="select('rock')"></i>
+            <i title="Scissors" id="playerScissors" class="far fa-hand-scissors" onclick="select('scissors')"></i>
+            <i title="Paper" id="playerPaper" class="far fa-hand-paper" onclick="select('paper')"></i>
+            <i title="Lizard" id="playerLizard" class="far fa-hand-lizard" onclick="select('lizard')"></i>
+            <i title="Spock" id="playerSpock" class="far fa-hand-spock" onclick="select('spock')"></i>
+        </div>
+        <!-- Computer container -->
+        <div class="player-container" id="computer">
+            <h2>You - <span id="computerScore">0</span>
+                <span id="computerChoice" class="choice"></span>
+            </h2>
+            <i title="rock" id="computerRock" class="far fa-hand-rock" onclick="select('rock')"></i>
+            <i title="Scissors" id="computerScissors" class="far fa-hand-scissors" onclick="select('scissors')"></i>
+            <i title="Paper" id="computerPaper" class="far fa-hand-paper" onclick="select('paper')"></i>
+            <i title="Lizard" id="computerLizard" class="far fa-hand-lizard" onclick="select('lizard')"></i>
+            <i title="Spock" id="computerSpock" class="far fa-hand-spock" onclick="select('spock')"></i>
+        </div>
+        <!-- Reset Icon-->
+        <i class="fas fa-sync-alt reset-icon" title="Reset" onclick ="resetAll()"></i>
+        <!-- Reset Text -->
+        <h3 class="result-container">
+            <h3 class="result-text" id="resultText"></h3>
+        </h3>
+
+    </div>
+    <!-- Script -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>
